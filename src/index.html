@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div
+        class="d-flex flex-row justify-content-center align-items-center navbar"
+      >
+        <a href="#hero-section" class="nav-link">HOME</a>
+        <a href="#vertical" class="nav-link">SKILLS</a>
+        <a href="#vertical-projects" class="nav-link">PROJECTS</a>
+      </div>
+
+      <div class="d-flex flex-column hero-container" id="hero-section">
+        <div class="d-flex flex-row p-5 align-items-center inside-container">
+          <div class="d-flex mx-5 px-5 flex-column left-section">
+            <h1 class="text-start text-white">Hello, I'm Madhu Shrestha</h1>
+            <p class="text-start fs-5 lh-sm fw-regular">
+              A passionate third-year Software Engineering student with a strong
+              interest in frontend development. I enjoy bringing creative ideas
+              to life using technologies like React, JavaScript, HTML, and CSS.
+              Throughout my journey, I’ve built web applications that focus on
+              intuitive user interfaces and my skills have expanded to include
+              frameworks such as Bootstrap and Vite.
+            </p>
+            <div class="links">
+              <a href="https://github.com/madhueyy" target="_blank">
+                <img src="./assets/github_icon.svg" alt="GitHub Link" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/madhu-shrestha/"
+                target="_blank"
+              >
+                <img src="./assets/linkedin_icon.svg" alt="LinkedIn Link" />
+              </a>
+            </div>
+          </div>
+
+          <div class="d-flex right-section">
+            <dotlottie-player
+              src="https://lottie.host/e72723d1-485a-4366-8506-72da2b822c41/rVLuoEYcHU.json"
+              background="transparent"
+              speed="1"
+              style="width: 800px; height: 800px"
+              loop
+              autoplay
+            ></dotlottie-player>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center" id="vertical">
+        <h1 class="scroll-text">Scroll to see my experience 😊</h1>
+      </div>
+
+      <section id="horizontal">
+        <div class="content animate-scale">
+          <p>Languages</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/js.png"
+            alt="JavaScript"
+          />
+          <p class="language-text">JavaScript</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/ts.png"
+            alt="TypeScript"
+          />
+          <p class="language-text">TypeScript</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/java.png"
+            alt="Java"
+          />
+          <p class="language-text">Java</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/python.png"
+            alt="Python"
+          />
+          <p class="language-text">Python</p>
+        </div>
+        <div class="content animate-up">
+          <img class="language-library-img" src="./assets/c.png" alt="C" />
+          <p class="language-text">C</p>
+        </div>
+        <div class="content animate-up">
+          <p>Frameworks</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/react.png"
+            alt="React"
+          />
+          <p class="library-text">React</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/tailwind.png"
+            alt="Tailwind CSS"
+          />
+          <p class="library-text">Tailwind CSS</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/bootstrap.png"
+            alt="Bootstrap"
+          />
+          <p class="library-text">Boostrap</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/nodejs.png"
+            alt="NodeJS"
+          />
+          <p class="library-text">NodeJS</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/material_ui.png"
+            alt="Material UI"
+          />
+          <p class="library-text">Material UI</p>
+        </div>
+        <div class="content animate-up">
+          <img
+            class="language-library-img"
+            src="./assets/mantine.png"
+            alt="Mantine"
+          />
+          <p class="library-text">Mantine</p>
+        </div>
+      </section>
+
+      <div class="d-flex justify-content-center" id="vertical-projects">
+        <h1 class="m-5">MY PROJECTS</h1>
+      </div>
+      <div class="projects-container">
+        <div class="left-container text-start mx-5 px-4">
+          <h2>BOTANIQ</h2>
+          <p>
+            An indoor plant shopping website. Allows users to browse, sort, and
+            search a variety of plants. Implemented dynamic plant filtering by
+            cateogires such as price, popularity, and reviews. Designed
+            individual plant detail pages with a checkout flow, leveraging state
+            management to handle selected items efficiently.
+          </p>
+          <span>Typescript | React | Material UI</span>
+          <hr />
+          <div class="links">
+            <a href="https://botaniq-seven.vercel.app/" target="_blank">
+              <img src="./assets/vercel_icon.svg" />
+            </a>
+            <a href="https://github.com/madhueyy/botaniq" target="_blank">
+              <img src="./assets/github_icon.svg" />
+            </a>
+            <a
+              href="https://www.figma.com/design/rjabGVHEFXXexPAFlE17iO/Botaniq?node-id=0-1&node-type=canvas&t=uVSZg2S4B2jtA0ZB-0"
+              target="_blank"
+            >
+              <img src="./assets/figma_icon.svg" />
+            </a>
+          </div>
+        </div>
+
+        <div class="right-container d-flex flex-row justify-content-end">
+          <div class="carousel" id="slider">
+            <input type="radio" id="s1" name="slider" checked />
+            <input type="radio" id="s2" name="slider" />
+            <input type="radio" id="s3" name="slider" />
+
+            <label for="s1" id="slide1">
+              <img src="./assets/botaniq_1.png" alt="Botaniq Slide 1" />
+            </label>
+
+            <label for="s2" id="slide2">
+              <img src="./assets/botaniq_2.png" alt="Botaniq Slide 2" />
+            </label>
+
+            <label for="s3" id="slide3">
+              <img src="./assets/botaniq_3.png" alt="Botaniq Slide 3" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-container-2">
+        <div class="left-container d-flex flex-row justify-content-start">
+          <div class="carousel-2" id="slider-2">
+            <input type="radio" id="s1-2" name="slider-2" checked />
+            <input type="radio" id="s2-2" name="slider-2" />
+            <input type="radio" id="s3-2" name="slider-2" />
+
+            <label for="s1-2" id="slide1-2">
+              <img src="./assets/fruit_focus_1.png" alt="Fruit Focus Slide 1" />
+            </label>
+
+            <label for="s2-2" id="slide2-2">
+              <img src="./assets/fruit_focus_2.png" alt="Fruit Focus Slide 2" />
+            </label>
+
+            <label for="s3-2" id="slide3-2">
+              <img src="./assets/fruit_focus_3.png" alt="Fruit Focus Slide 3" />
+            </label>
+          </div>
+        </div>
+
+        <div class="right-container text-end mx-5 px-4">
+          <h2>FRUIT FOCUS</h2>
+          <p>
+            An interactive website to help users identify seasonal fruits based
+            on their geographic location within Australia. Implemented a search
+            functionality that allows users to find specific fruits by name,
+            nutrient content or seasonality. Integrated detailed fruit profiles
+            displaying macro and micronutrient information.
+          </p>
+          <span>Typescript | React | Mantine UI</span>
+          <hr />
+          <div class="links">
+            <a
+              href="https://github.com/devsoc-unsw/trainee-bard-24t2"
+              target="_blank"
+            >
+              <img src="./assets/github_icon.svg" />
+            </a>
+            <a
+              href="https://www.figma.com/design/jFadqUyKAE4zOSHPjEMbO5/DEVT2-Bard?node-id=109-105&node-type=canvas&t=srop0orsItKNIF4F-0"
+              target="_blank"
+            >
+              <img src="./assets/figma_icon.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-container-3">
+        <div class="left-container text-start mx-5 px-4">
+          <h2>POMODORO TIMER</h2>
+          <p>
+            A user-friendly pomodoro timer to enhance productivity and time
+            management using the Pomodoro study technique. Implemented features
+            allowing users to start, stop and adjust the timer while setting
+            daily productivity goals. Integrated a streak tracking system to
+            encourage engagement by celebrating consecutive days of achieving
+            daily goals.
+          </p>
+          <span>HTML | CSS | Vanilla JS</span>
+          <hr />
+          <div class="links">
+            <a
+              href="https://pomodoro-timer-eight-theta.vercel.app/"
+              target="_blank"
+            >
+              <img src="./assets/vercel_icon.svg" />
+            </a>
+            <a
+              href="https://github.com/madhueyy/pomodoro-timer"
+              target="_blank"
+            >
+              <img src="./assets/github_icon.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="right-container d-flex flex-row justify-content-end">
+          <div class="carousel-3" id="slider-3">
+            <input type="radio" id="s1-3" name="slider-3" checked />
+            <input type="radio" id="s2-3" name="slider-3" />
+            <input type="radio" id="s3-3" name="slider-3" />
+
+            <label for="s1-3" id="slide1-3">
+              <img src="./assets/pomodoro_1.png" alt="Pomodoro Slide 1" />
+            </label>
+
+            <label for="s2-3" id="slide2-3">
+              <img src="./assets/pomodoro_2.png" alt="Pomodoro Slide 2" />
+            </label>
+
+            <label for="s3-3" id="slide3-3">
+              <img src="./assets/pomodoro_3.png" alt="Pomodoro Slide 3" />
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center my-5" id="vertical-made">
+        <h3>Website made using: <img src="./assets/Frame 3.png" /></h3>
+      </div>
+    </div>
+  </body>
+</html>

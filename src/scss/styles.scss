@@ -1,0 +1,374 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+html {
+  scroll-behavior: smooth;
+}
+
+.outer-container {
+  background-color: rgb(26, 26, 26);
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Inter";
+}
+
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  transition: border-bottom 0.3s ease;
+  height: 80px;
+  gap: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #79daaa;
+}
+
+.container {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 9px;
+}
+
+#svg-stage {
+  width: 80%;
+  max-width: 750px;
+  overflow: visible;
+}
+
+.hero-container {
+  height: 96vh;
+}
+
+.inside-container {
+  height: 100%;
+}
+
+.left-section {
+  width: 50vw;
+}
+
+.right-section {
+  width: 50vw;
+}
+
+h1 {
+  font-size: 5rem;
+  color: white;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #79daaa;
+}
+
+#horizontal .content {
+  height: 100vh;
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+#horizontal {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+#horizontal .content:nth-child(1) {
+  width: 100vw;
+}
+
+#horizontal p {
+  font-size: 3rem;
+}
+
+.language-library-img {
+  margin-bottom: -400px;
+}
+
+.language-text {
+  color: #ffacff;
+  margin-top: -200px;
+}
+
+.library-text {
+  color: #79daaa;
+  margin-top: -200px;
+}
+
+#horizontal .content:nth-child(n + 2):nth-child(-n + 14) {
+  color: white;
+  font-size: 2rem;
+  width: 20vw;
+  text-align: center;
+}
+
+.projects {
+  max-width: 700px;
+  margin-inline: auto;
+  line-height: 1.9;
+}
+
+.scroll-text {
+  color: white;
+  font-size: 1rem;
+  transform-origin: center;
+  animation: tada;
+  animation-duration: 2s;
+}
+
+p {
+  font-size: 1.3rem;
+  color: #c7c7c7;
+}
+
+span {
+  font-size: 2rem;
+  color: #ffacff;
+  letter-spacing: 6px;
+}
+
+hr {
+  height: 2px;
+  border: none;
+  background-color: white;
+  margin-left: -10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+input[type="radio"] {
+  margin-top: 420px;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin-bottom: 15px;
+  opacity: 0.5;
+  cursor: pointer;
+  accent-color: #79daaa;
+  margin-left: 10px;
+  border: none;
+}
+
+input[type="radio"]:checked {
+  opacity: 1;
+}
+
+// First project container
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.links img {
+  width: 4rem;
+}
+
+.carousel {
+  display: flex;
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+#slide1,
+#slide2,
+#slide3 {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: transform 400ms ease;
+}
+
+/* Selected slides */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3 {
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next slides */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide1 {
+  opacity: 0.7;
+  transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous slides */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2 {
+  opacity: 0.7;
+  transform: translate3d(-30%, 0, -250px);
+}
+
+// Second project container
+.projects-container-2 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  margin-bottom: 100px;
+}
+
+.projects-container-2 img {
+  width: 4rem;
+}
+
+.carousel-2 {
+  display: flex;
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-2 img {
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+#slide1-2,
+#slide2-2,
+#slide3-2 {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: transform 400ms ease;
+}
+
+/* Selected slides */
+#s1-2:checked ~ #slide1-2,
+#s2-2:checked ~ #slide2-2,
+#s3-2:checked ~ #slide3-2 {
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next slides */
+#s1-2:checked ~ #slide2-2,
+#s2-2:checked ~ #slide3-2,
+#s3-2:checked ~ #slide1-2 {
+  opacity: 0.7;
+  transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous slides */
+#s1-2:checked ~ #slide3-2,
+#s2-2:checked ~ #slide1-2,
+#s3-2:checked ~ #slide2-2 {
+  opacity: 0.7;
+  transform: translate3d(-30%, 0, -250px);
+}
+
+// Third project container
+.projects-container-3 {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  margin-bottom: 200px;
+}
+
+.projects-container-3 img {
+  width: 4rem;
+}
+
+.carousel-3 {
+  display: flex;
+  width: 50vw;
+  height: 40vh;
+  position: relative;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-3 img {
+  width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+}
+
+#slide1-3,
+#slide2-3,
+#slide3-3 {
+  position: absolute;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: transform 400ms ease;
+}
+
+/* Selected slides */
+#s1-3:checked ~ #slide1-3,
+#s2-3:checked ~ #slide2-3,
+#s3-3:checked ~ #slide3-3 {
+  transform: translate3d(0%, 0, 0px);
+}
+
+/* Next slides */
+#s1-3:checked ~ #slide2-3,
+#s2-3:checked ~ #slide3-3,
+#s3-3:checked ~ #slide1-3 {
+  opacity: 0.7;
+  transform: translate3d(30%, 0, -250px);
+}
+
+/* Previous slides */
+#s1-3:checked ~ #slide3-3,
+#s2-3:checked ~ #slide1-3,
+#s3-3:checked ~ #slide2-3 {
+  opacity: 0.7;
+  transform: translate3d(-30%, 0, -250px);
+}
+
+h3 {
+  color: white;
+  font-size: 2rem;
+}
