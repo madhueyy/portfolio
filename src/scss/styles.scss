@@ -372,3 +372,42 @@ h3 {
   color: white;
   font-size: 2rem;
 }
+
+// For laptops
+@media (max-width: 1536px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 0.95rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+
+  .links img {
+    width: 3rem;
+  }
+
+  .carousel img {
+    width: 420px;
+  }
+
+  .carousel-2 img {
+    width: 420px;
+  }
+
+  .carousel-3 img {
+    width: 420px;
+  }
+
+  .language-library-img {
+    margin-bottom: -200px;
+  }
+
+  #horizontal p {
+    font-size: 2.2rem;
+  }
+}

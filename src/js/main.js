@@ -119,7 +119,7 @@ gsap.from(".projects-container", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".projects-container",
-    start: "top center",
+    start: "top 80%",
     toggleActions: "play none none reverse",
   },
 });
@@ -131,7 +131,7 @@ gsap.from(".projects-container-2", {
   ease: "power2.out",
   scrollTrigger: {
     trigger: ".projects-container-2",
-    start: "top center",
+    start: "top 80%",
     toggleActions: "play none none reverse",
   },
 });
