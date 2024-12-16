@@ -115,7 +115,7 @@ h2 {
 }
 
 .language-text {
-  color: #ffacff;
+  color: #ce79ff;
   margin-top: -200px;
 }
 
@@ -152,8 +152,14 @@ p {
 
 span {
   font-size: 2rem;
-  color: #ffacff;
+  color: #ce79ff;
   letter-spacing: 6px;
+}
+
+.hello-text {
+  color: #ce79ff;
+  font-size: 4rem;
+  letter-spacing: 0px;
 }
 
 hr {
@@ -409,5 +415,55 @@ h3 {
 
   #horizontal p {
     font-size: 2.2rem;
+  }
+}
+
+// For mobile
+@media (max-width: 500px) {
+  .navbar {
+    height: 60px;
+    gap: 60px;
+  }
+
+  .nav-link {
+    margin-top: 0px;
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .right-section {
+    display: none;
+  }
+
+  .left-section {
+    width: 100vw;
+  }
+
+  .right-section {
+    width: 0vw;
+  }
+
+  .hello-text {
+    font-size: 3rem;
+  }
+
+  #horizontal p {
+    font-size: 0.9rem;
+  }
+
+  .language-library-img {
+    margin-bottom: -300px;
+    width: 100px;
+  }
+
+  #horizontal .content:nth-child(n + 2):nth-child(-n + 14) {
+    color: white;
+    font-size: 0.9rem;
+    width: 22vw;
+    text-align: center;
+    margin-inline: 8vw;
   }
 }

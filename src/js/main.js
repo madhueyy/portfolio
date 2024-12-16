@@ -23,9 +23,13 @@ window.addEventListener("scroll", function () {
 
 // Horizontal scroll for skills section
 const contents = gsap.utils.toArray(".content");
+const isSmallScreen = window.innerWidth <= 500;
+const xPercent = isSmallScreen
+  ? -160 * (contents.length - 1) * 0.9
+  : -100 * (contents.length - 1);
 
 let scrollTween = gsap.to(contents, {
-  xPercent: -100 * (contents.length - 1),
+  xPercent: xPercent,
   scrollTrigger: {
     trigger: "#horizontal",
     pin: true,
