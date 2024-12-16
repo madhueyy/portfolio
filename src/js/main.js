@@ -23,10 +23,17 @@ window.addEventListener("scroll", function () {
 
 // Horizontal scroll for skills section
 const contents = gsap.utils.toArray(".content");
-const isSmallScreen = window.innerWidth <= 500;
-const xPercent = isSmallScreen
-  ? -160 * (contents.length - 1) * 0.9
-  : -100 * (contents.length - 1);
+const isMobile = window.innerWidth <= 500;
+const isTablet = window.innerWidth <= 1024;
+const xPercent = () => {
+  if (isMobile) {
+    return -160 * (contents.length - 1) * 0.9;
+  } else if (isTablet) {
+    return -160 * (contents.length - 1);
+  } else {
+    return -100 * (contents.length - 1);
+  }
+};
 
 let scrollTween = gsap.to(contents, {
   xPercent: xPercent,
@@ -110,7 +117,7 @@ animations.forEach((animation) => {
       trigger: animation,
       containerAnimation: scrollTween,
       start: "left 100%",
-      toggleActions: "play none none reverse",
+      toggleActions: "play none none none",
     },
   });
 });

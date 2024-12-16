@@ -74,6 +74,11 @@ a {
   width: 50vw;
 }
 
+.right-section dotlottie-player {
+  width: 800px;
+  height: 800px;
+}
+
 h1 {
   font-size: 5rem;
   color: white;
@@ -120,7 +125,7 @@ h2 {
 }
 
 .library-text {
-  color: #79daaa;
+  color: #ce79ff;
   margin-top: -200px;
 }
 
@@ -147,7 +152,7 @@ h2 {
 
 p {
   font-size: 1.3rem;
-  color: #c7c7c7;
+  color: white;
 }
 
 span {
@@ -203,7 +208,7 @@ input[type="radio"]:checked {
 
 .carousel {
   display: flex;
-  width: 30vw;
+  width: 50vw;
   height: 40vh;
   position: relative;
   perspective: 1400px;
@@ -418,6 +423,86 @@ h3 {
   }
 }
 
+// For tablet
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  .left-section {
+    width: 40vw;
+  }
+
+  .right-section {
+    width: 60vw;
+  }
+
+  .right-section dotlottie-player {
+    width: 500px;
+    height: 500px;
+  }
+
+  .hello-text {
+    font-size: 3rem;
+  }
+
+  .language-library-img {
+    margin-bottom: -300px;
+  }
+
+  #horizontal .content:nth-child(n + 2):nth-child(-n + 14) {
+    margin-inline: 9vw;
+  }
+
+  input[type="radio"] {
+    margin-top: 420px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-container span {
+    font-size: 1.3rem;
+  }
+
+  .carousel {
+    width: 100vw;
+  }
+
+  .projects-container-2 {
+    flex-direction: column-reverse;
+  }
+
+  .projects-container-2 span {
+    font-size: 1.3rem;
+  }
+
+  .carousel-2 {
+    width: 100vw;
+  }
+
+  .projects-container-3 {
+    flex-direction: column;
+  }
+
+  .projects-container-3 span {
+    font-size: 1.3rem;
+  }
+
+  .projects-container-3 h2 {
+    font-size: 3rem;
+  }
+
+  .carousel-3 {
+    width: 100vw;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+}
+
 // For mobile
 @media (max-width: 500px) {
   .navbar {
@@ -460,19 +545,13 @@ h3 {
   }
 
   #horizontal .content:nth-child(n + 2):nth-child(-n + 14) {
-    color: white;
     font-size: 0.9rem;
     width: 22vw;
-    text-align: center;
     margin-inline: 8vw;
   }
 
   input[type="radio"] {
     margin-top: 320px;
-  }
-
-  .projects-container {
-    flex-direction: column;
   }
 
   .projects-container span {
@@ -487,10 +566,6 @@ h3 {
     width: 260px;
   }
 
-  .projects-container-2 {
-    flex-direction: column-reverse;
-  }
-
   .projects-container-2 span {
     font-size: 1.2rem;
   }
@@ -503,16 +578,8 @@ h3 {
     width: 260px;
   }
 
-  .projects-container-3 {
-    flex-direction: column;
-  }
-
   .projects-container-3 span {
     font-size: 1.2rem;
-  }
-
-  .projects-container-3 h2 {
-    font-size: 3rem;
   }
 
   .carousel-3 {
