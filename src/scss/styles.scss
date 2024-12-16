@@ -203,7 +203,7 @@ input[type="radio"]:checked {
 
 .carousel {
   display: flex;
-  width: 50vw;
+  width: 30vw;
   height: 40vh;
   position: relative;
   perspective: 1400px;
@@ -465,5 +465,66 @@ h3 {
     width: 22vw;
     text-align: center;
     margin-inline: 8vw;
+  }
+
+  input[type="radio"] {
+    margin-top: 320px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+  }
+
+  .projects-container span {
+    font-size: 1.2rem;
+  }
+
+  .carousel {
+    width: 100vw;
+  }
+
+  .carousel img {
+    width: 260px;
+  }
+
+  .projects-container-2 {
+    flex-direction: column-reverse;
+  }
+
+  .projects-container-2 span {
+    font-size: 1.2rem;
+  }
+
+  .carousel-2 {
+    width: 100vw;
+  }
+
+  .carousel-2 img {
+    width: 260px;
+  }
+
+  .projects-container-3 {
+    flex-direction: column;
+  }
+
+  .projects-container-3 span {
+    font-size: 1.2rem;
+  }
+
+  .projects-container-3 h2 {
+    font-size: 3rem;
+  }
+
+  .carousel-3 {
+    width: 100vw;
+  }
+
+  .carousel-3 img {
+    width: 260px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    text-align: center;
   }
 }
